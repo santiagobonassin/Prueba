@@ -164,57 +164,91 @@ void cargarProyectos(eProyecto proyecto[])
     }
 
 }
-void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyecto_Programador ProyectosporProgramador[])
+void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyecto_Programador pp[],int tam,int tamp, int tampp)
 {
-    int i;
-    int j;
-    int l;
-    int auxint;
-    int auxint2;
 
-    for(i=0;i<5;i++)
+    char auxStringId[100],auxStringIdProyecto[100],auxStringHoras[100];
+    int auxId,auxIdProyecto,auxHoras,flag=0,flag2=0,flag3=0;
+
+    for(int i=0; i<tam;i++)
     {
-        printf("ID: %d\nNombre: %s\nApellido: %s\nCategoria:\n\n",programadores[i].id,programadores[i].nombre,programadores[i].apellido,programadores[i].idCategoria);
-
-    }
-    for(i=0;i<3;i++)
-    {
-       printf("\nProyecto: %s\nID: %d\n\n",proyectos[i].nombre,proyectos[i].idProyecto);
-    }
-
-    printf("Ingrese ID de programador:");
-    scanf("%d",&auxint);
-
-    printf("Ingrese ID de proyecto:");
-    scanf("%d",&auxint2);
-
-    for(i=0;i<20;i++)
-    {
-        if(auxint==programadores[i].id)
+        if(programadores[i].estado==1)
         {
-           for(j=0;j<3;j++)
+            if(!flag)
+                printf("ID\t\tNombre\t\tApellido\t\tCategoria 1-J 2-SS 3-S\n");
+            printf("%d\t\t%s\t\t%s\t\t\t%d\n",programadores[i].id,programadores[i].nombre,programadores[i].apellido,programadores[i].idCategoria);
+            flag=1;
+        }
+
+    }
+    printf("Ingrese el ID del programador: ");
+    gets(auxStringId);
+
+    while(isalpha(auxStringId)==1)
+    {
+        printf("Error, reingrese: ");
+        gets(auxStringId);
+    }
+    auxId=atoi(auxStringId);
+
+    for(int i=0;i<tam;i++)
+    {
+        if(auxId==programadores[i].id && programadores[i].estado==1)
+        {
+            flag2=1;
+            for(int j=0;j<tamp;j++)
             {
-                if(auxint2==proyectos[j].idProyecto)
+                if(proyectos[j].idProyecto!=-1)
                 {
-                    for(l=0;l<10;l++)
+                    printf("%d\t%s\n",proyectos[j].idProyecto,proyectos[j].nombre);
+                }
+            }
+            printf("Ingrese el ID del proyecto: ");
+            gets(auxStringIdProyecto);
+
+            while(isalpha(auxStringIdProyecto)==1)
+                {
+                    printf("Error, reingrese: ");
+                    gets(auxStringIdProyecto);
+                }
+            auxIdProyecto=atoi(auxStringIdProyecto);
+            for(int j=0;j<tamp;j++)
+            {
+                if(auxStringIdProyecto==proyectos[j].idProyecto)
+                {
+                    flag3=1;
+                    for(int k=0;k<tampp;k++)
                     {
-                        if()
+                        if(pp[k].idProgramador==-1 && pp[k].idProyecto==-1)
                         {
-                            ProyectosporProgramador[l].idProgramador=auxint;
-                            ProyectosporProgramador[l].idProyecto=auxint2;
-                            printf("Ingrese la cantidad de horas de trabajo del programador: ");
-                            scanf("%d",&ProyectosporProgramador[l].horas);
+                            printf("Ingrese hhoras de trabajo: ");
+                            gets(auxStringHoras);
 
-                            ProyectosporProgramador[l].estado=1;
-
-                            break;
+                            while(isalpha(auxStringHoras)==1)
+                                {
+                                    printf("Error, reingrese: ");
+                                    gets(auxStringHoras);
+                                }
+                                auxHoras=atoi(auxStringHoras);
+                                pp[k].idProgramador=auxId;
+                                pp[k].idProyecto=auxIdProyecto;
+                                pp[k].horas=auxHoras;
+                                break;
                         }
                     }
                 }
             }
         }
-
     }
+    if(!flag2)
+    {
+        printf("No se encontro el ID del programador");
+    }
+    if(!flag3)
+    {
+        printf("No se encontro el ID del proyecto");
+    }
+
 }
 
 

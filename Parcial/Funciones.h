@@ -30,7 +30,7 @@ typedef struct{
     int idProyecto;
     int idProgramador;
     int horas;
-
+    int estado;
 }eProyecto_Programador;
 
 void tomarDato(eProgramador[]);
@@ -43,6 +43,6 @@ void cargarCategoria(eCategoria[]);
 
 void cargarProyectos(eProyecto[]);
 
-void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyecto_Programador ProyectosporProgramador[]);
+void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyecto_Programador pp[],int tam, int tamp, int tampp);
 
 #endif // FUNCIONES_H_INCLUDED

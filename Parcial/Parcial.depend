@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1494865103 source:c:\users\cxs101\desktop\parcial\funciones.c
+1494881114 source:c:\users\cxs101\desktop\parcial\funciones.c
 	<stdio.h>
 	<stdlib.h>
 	"Funciones.h"
@@ -7,9 +7,9 @@
 	<conio.h>
 	<ctype.h>
 
-1494865103 c:\users\cxs101\desktop\parcial\funciones.h
+1494880716 c:\users\cxs101\desktop\parcial\funciones.h
 
-1494865103 source:c:\users\cxs101\desktop\parcial\main.c
+1494882709 source:c:\users\cxs101\desktop\parcial\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Funciones.h"

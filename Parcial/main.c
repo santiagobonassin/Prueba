@@ -46,7 +46,7 @@ int main()
 
             case 4:
 
-                derivarProyectos(plantilla,proyectos,proyectosPorprogramador);
+                derivarProyectos(plantilla,proyectos,proyectosPorprogramador,4,3,10);
 
 
                 break;
