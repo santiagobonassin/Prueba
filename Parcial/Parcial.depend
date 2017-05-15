@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1494865103 source:c:\users\cxs101\desktop\parcial\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1494865103 c:\users\cxs101\desktop\parcial\funciones.h
+
+1494865103 source:c:\users\cxs101\desktop\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+
