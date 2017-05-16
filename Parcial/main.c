@@ -52,6 +52,10 @@ int main()
                 break;
 
             case 5:
+
+                organizar(plantilla);
+
+
                 break;
 
             case 6:

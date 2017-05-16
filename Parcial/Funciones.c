@@ -168,7 +168,7 @@ void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyec
 {
 
     char auxStringId[100],auxStringIdProyecto[100],auxStringHoras[100];
-    int auxId,auxIdProyecto,auxHoras,flag=0,flag2=0,flag3=0;
+    int auxId,auxIdProyecto,auxHoras,flag=0,flag2=0,flag3=0,IDValidada;
 
     for(int i=0; i<tam;i++)
     {
@@ -181,14 +181,11 @@ void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyec
         }
 
     }
-    printf("Ingrese el ID del programador: ");
-    gets(auxStringId);
-
-    while(isalpha(auxStringId)==1)
-    {
-        printf("Error, reingrese: ");
-        gets(auxStringId);
-    }
+    do{
+        printf("Ingrese el ID del programador: ");
+        scanf("%s",auxStringId);
+        IDValidada=validarID(auxStringId);
+    }while(IDValidada==1);
     auxId=atoi(auxStringId);
 
     for(int i=0;i<tam;i++)
@@ -203,32 +200,26 @@ void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyec
                     printf("%d\t%s\n",proyectos[j].idProyecto,proyectos[j].nombre);
                 }
             }
-            printf("Ingrese el ID del proyecto: ");
-            gets(auxStringIdProyecto);
-
-            while(isalpha(auxStringIdProyecto)==1)
-                {
-                    printf("Error, reingrese: ");
-                    gets(auxStringIdProyecto);
-                }
+            do{
+                printf("Ingrese el ID del proyecto: ");
+                scanf("%s",auxStringIdProyecto);
+                IDValidada=validarID(auxStringIdProyecto);
+            }while(IDValidada==1);
             auxIdProyecto=atoi(auxStringIdProyecto);
             for(int j=0;j<tamp;j++)
             {
-                if(auxStringIdProyecto==proyectos[j].idProyecto)
+                if(auxIdProyecto==proyectos[j].idProyecto)
                 {
                     flag3=1;
                     for(int k=0;k<tampp;k++)
                     {
-                        if(pp[k].idProgramador==-1 && pp[k].idProyecto==-1)
+                        if(pp[k].estado==0)
                         {
-                            printf("Ingrese hhoras de trabajo: ");
-                            gets(auxStringHoras);
-
-                            while(isalpha(auxStringHoras)==1)
-                                {
-                                    printf("Error, reingrese: ");
-                                    gets(auxStringHoras);
-                                }
+                            do{
+                                printf("Ingrese la cantidad de horas: ");
+                                scanf("%s",auxStringHoras);
+                                IDValidada=validarID(auxStringHoras);
+                                }while(IDValidada==1);
                                 auxHoras=atoi(auxStringHoras);
                                 pp[k].idProgramador=auxId;
                                 pp[k].idProyecto=auxIdProyecto;
@@ -250,5 +241,78 @@ void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyec
     }
 
 }
+int validarID(char ID[])
+{
+   int i;
+
+   int IDValido=0;
+
+    for(i=0;i<strlen(ID);i++)
+            {
+
+                if(isdigit(ID[i])!=1)
+                    {
+
+                        printf("El numero ingresado no es valido, ");
+                        IDValido=1;
+                        break;
+                    }
 
 
+            }
+return IDValido;
+}
+void organizar(eProgramador ingreso[])
+ {
+    int i;
+    int j;
+    int auxint;
+    char auxstring [90];
+
+    for(i=0; i<20-1; i++)
+            {
+                for(j=i+1; j<20; j++)
+                {
+                    if(ingreso[i].estado==1 && ingreso[j].estado==1)
+                    {
+                        if(ingreso[i].id>ingreso[j].id)
+                        {
+                            auxint = ingreso[i].id;
+                            ingreso[i].id = ingreso[j].id;
+                            ingreso[j].id = auxint;
+
+                            strcpy(auxstring, ingreso[i].nombre);
+                            strcpy(ingreso[i].nombre, ingreso[j].nombre);
+                            strcpy(ingreso[j].nombre,auxstring);
+
+                            strcpy(auxstring, ingreso[i].apellido);
+                            strcpy(ingreso[i].apellido, ingreso[j].apellido);
+                            strcpy(ingreso[j].apellido,auxstring);
+
+                            auxint = ingreso[i].idCategoria;
+                            ingreso[i].idCategoria = ingreso[j].idCategoria;
+                            ingreso[j].idCategoria = auxint;
+
+                            auxint = ingreso[i].estado;
+                            ingreso[i].estado = ingreso[j].estado;
+                            ingreso[j].estado = auxint;
+
+                        }
+
+                    }
+                }
+            }
+
+  printf("Datos de las personas registradas:\n\n");
+
+  for(i=0; i<20; i++)
+     {
+        if(ingreso[i].estado!=0)
+            {
+
+                printf("ID: %d\nNombre: %s\nApellido: %s\nID Categoria: %d\n\n", ingreso[i].id, ingreso[i].nombre, ingreso[i].apellido, ingreso[i].idCategoria);
+            }
+
+     }
+
+ }

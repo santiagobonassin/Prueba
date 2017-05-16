@@ -45,4 +45,8 @@ void cargarProyectos(eProyecto[]);
 
 void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyecto_Programador pp[],int tam, int tamp, int tampp);
 
+int validarID(char ID[]);
+
+void organizar(eProgramador ingreso[]);
+
 #endif // FUNCIONES_H_INCLUDED
