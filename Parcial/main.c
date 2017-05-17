@@ -59,12 +59,22 @@ int main()
                 break;
 
             case 6:
+
+
+
+
                 break;
 
             case 7:
+
+                listarProyectosdeProgramador(plantilla,proyectos,proyectosPorprogramador);
+
                 break;
 
             case 8:
+
+                proyectoMasGrande(plantilla,proyectos,proyectosPorprogramador,4,3,10);
+
                 break;
 
             case 9:

@@ -43,10 +43,16 @@ void cargarCategoria(eCategoria[]);
 
 void cargarProyectos(eProyecto[]);
 
-void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyecto_Programador pp[],int tam, int tamp, int tampp);
+void derivarProyectos(eProgramador[],eProyecto[],eProyecto_Programador[],int, int, int);
 
 int validarID(char ID[]);
 
-void organizar(eProgramador ingreso[]);
+void organizar(eProgramador[]);
+
+
+
+void listarProyectosdeProgramador(eProgramador[],eProyecto[],eProyecto_Programador[]);
+
+void proyectoMasGrande (eProgramador[],eProyecto[],eProyecto_Programador[],int, int, int);
 
 #endif // FUNCIONES_H_INCLUDED

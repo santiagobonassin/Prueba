@@ -13,7 +13,7 @@ void tomarDato(eProgramador plantilla[])
     int flag=0;
     char auxstring[35];
     char auxstring2[35];
-int i;
+    int i;
 
             for(i=0; i<5; i++)
             {
@@ -164,13 +164,24 @@ void cargarProyectos(eProyecto proyecto[])
     }
 
 }
-void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyecto_Programador pp[],int tam,int tamp, int tampp)
+void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyecto_Programador proyectoPorProgramador[],int tam,int tamp, int tampp)
 {
 
-    char auxStringId[100],auxStringIdProyecto[100],auxStringHoras[100];
-    int auxId,auxIdProyecto,auxHoras,flag=0,flag2=0,flag3=0,IDValidada;
+    char auxStringId[100];
+    char auxStringIdProyecto[100];
+    char auxStringHoras[100];
+    int auxId;
+    int auxIdProyecto;
+    int auxHoras;
+    int flag=0;
+    int flag2=0;
+    int flag3=0;
+    int IDValidada;
+    int i;
+    int j;
+    int k;
 
-    for(int i=0; i<tam;i++)
+    for(i=0; i<tam;i++)
     {
         if(programadores[i].estado==1)
         {
@@ -188,12 +199,12 @@ void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyec
     }while(IDValidada==1);
     auxId=atoi(auxStringId);
 
-    for(int i=0;i<tam;i++)
+    for(i=0;i<tam;i++)
     {
         if(auxId==programadores[i].id && programadores[i].estado==1)
         {
             flag2=1;
-            for(int j=0;j<tamp;j++)
+            for(j=0;j<tamp;j++)
             {
                 if(proyectos[j].idProyecto!=-1)
                 {
@@ -206,14 +217,14 @@ void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyec
                 IDValidada=validarID(auxStringIdProyecto);
             }while(IDValidada==1);
             auxIdProyecto=atoi(auxStringIdProyecto);
-            for(int j=0;j<tamp;j++)
+            for(j=0;j<tamp;j++)
             {
                 if(auxIdProyecto==proyectos[j].idProyecto)
                 {
                     flag3=1;
-                    for(int k=0;k<tampp;k++)
+                    for(k=0;k<tampp;k++)
                     {
-                        if(pp[k].estado==0)
+                        if(proyectoPorProgramador[k].estado==0)
                         {
                             do{
                                 printf("Ingrese la cantidad de horas: ");
@@ -221,9 +232,9 @@ void derivarProyectos(eProgramador programadores[],eProyecto proyectos[],eProyec
                                 IDValidada=validarID(auxStringHoras);
                                 }while(IDValidada==1);
                                 auxHoras=atoi(auxStringHoras);
-                                pp[k].idProgramador=auxId;
-                                pp[k].idProyecto=auxIdProyecto;
-                                pp[k].horas=auxHoras;
+                                proyectoPorProgramador[k].idProgramador=auxId;
+                                proyectoPorProgramador[k].idProyecto=auxIdProyecto;
+                                proyectoPorProgramador[k].horas=auxHoras;
                                 break;
                         }
                     }
@@ -263,56 +274,100 @@ int validarID(char ID[])
 return IDValido;
 }
 void organizar(eProgramador ingreso[])
- {
+{
     int i;
     int j;
-    int auxint;
-    char auxstring [90];
+    eProgramador auxiliar;
 
-    for(i=0; i<20-1; i++)
+    for(i=0;i<50-1;i++)
+    {
+        for(j=i+1;j<50;j++)
+        {
+            if(ingreso[i].id>ingreso[j].id)
             {
-                for(j=i+1; j<20; j++)
+                auxiliar=ingreso[i];
+                ingreso[i]=ingreso[j];
+                ingreso[j]=auxiliar;
+            }
+        }
+    }
+}
+
+void listarProyectosdeProgramador(eProgramador programador[],eProyecto proyectos[],eProyecto_Programador proyectosPorProgramador[])
+{
+    int i;
+    int j;
+    int k;
+    int auxID;
+
+    for(i=0;i<4;i++)
+    {
+        printf("ID: %d\nNombre: %s\nApellido:%s\nID categoria: %d\n\n",programador[i].id,programador[i].nombre,programador[i].apellido,programador[i].idCategoria);
+    }
+       printf("Seleccione un ID para mostrar: ");
+       scanf("%d",&auxID);
+
+    for(i=0;i<4;i++)
+    {
+        if(auxID==programador[i].id)
+        {
+            for(j=0;j<10;j++)
+            {
+                if(programador[i].id==proyectosPorProgramador[j].idProgramador)
                 {
-                    if(ingreso[i].estado==1 && ingreso[j].estado==1)
+                    for(k=0;k<3;k++)
                     {
-                        if(ingreso[i].id>ingreso[j].id)
+                        if(proyectosPorProgramador[j].idProyecto==proyectos[k].idProyecto)
                         {
-                            auxint = ingreso[i].id;
-                            ingreso[i].id = ingreso[j].id;
-                            ingreso[j].id = auxint;
-
-                            strcpy(auxstring, ingreso[i].nombre);
-                            strcpy(ingreso[i].nombre, ingreso[j].nombre);
-                            strcpy(ingreso[j].nombre,auxstring);
-
-                            strcpy(auxstring, ingreso[i].apellido);
-                            strcpy(ingreso[i].apellido, ingreso[j].apellido);
-                            strcpy(ingreso[j].apellido,auxstring);
-
-                            auxint = ingreso[i].idCategoria;
-                            ingreso[i].idCategoria = ingreso[j].idCategoria;
-                            ingreso[j].idCategoria = auxint;
-
-                            auxint = ingreso[i].estado;
-                            ingreso[i].estado = ingreso[j].estado;
-                            ingreso[j].estado = auxint;
-
+                           printf("\nID: %d\nNombre: %s\nApellido:%s\nID categoria: %d\n",programador[i].id,programador[i].nombre,programador[i].apellido,programador[i].idCategoria);
+                            printf("%s\n",proyectos[k].nombre);
                         }
-
                     }
                 }
             }
+        }
 
-  printf("Datos de las personas registradas:\n\n");
+    }
 
-  for(i=0; i<20; i++)
-     {
-        if(ingreso[i].estado!=0)
+}
+
+void proyectoMasGrande (eProgramador programadores[],eProyecto proyectos[],eProyecto_Programador proyectosPorProgramador[],int tam, int tamp, int tampp)
+{
+    int max;
+    int flag=0;
+    int cantProg;
+    int idMax;
+    char nombreMaximo[50];
+    int i;
+    int j;
+
+    for(i=0;i<tamp;i++)
+    {
+        cantProg=0;
+        if(proyectos[i].idProyecto!=0)
+        {
+            for(j=0;j<tampp;j++)
             {
-
-                printf("ID: %d\nNombre: %s\nApellido: %s\nID Categoria: %d\n\n", ingreso[i].id, ingreso[i].nombre, ingreso[i].apellido, ingreso[i].idCategoria);
+               if(proyectos[i].idProyecto==proyectosPorProgramador[j].idProyecto)
+                    {
+                        cantProg++;
+                    }
             }
+            if(!flag)
+                {
+                    max=cantProg;
+                    idMax=proyectos[i].idProyecto;
+                    strcpy(nombreMaximo,proyectos[i].nombre);
+                    flag=1;
+                }
+        }
+        if(cantProg>max)
+        {
+            max=cantProg;
+            idMax=proyectos[i].idProyecto;
+            strcpy(nombreMaximo,proyectos[i].nombre);
+        }
 
-     }
-
- }
+    }
+    printf("El proyecto %s (ID: %d)es el que cuenta con mas programadores con: %d\n",nombreMaximo,idMax,max);
+}
