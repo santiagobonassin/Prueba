@@ -1,0 +1,2 @@
+C:\Users\Tomas Angelo\Desktop\UTN\Bonassin.Santiago.2A.TP3\Proyecto_Clases_Abstractas\obj\Debug\Proyecto_Clases_Abstractas.csprojResolveAssemblyReference.cache
+C:\Users\Tomas Angelo\Desktop\UTN\Bonassin.Santiago.2A.TP3\Proyecto_Clases_Abstractas\obj\Debug\Proyecto_Clases_Abstractas.csproj.CoreCompileInputs.cache
