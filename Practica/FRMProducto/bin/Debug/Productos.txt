@@ -1,0 +1,6 @@
+Productos en el carro: 
+ID del producto: 5
+Nombre del producto: RX Vega 56
+Tipo de producto: PlacaDeVideo
+Precio: 14000
+

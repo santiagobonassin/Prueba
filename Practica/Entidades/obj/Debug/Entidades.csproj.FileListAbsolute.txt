@@ -1,0 +1,12 @@
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\Entidades\bin\Debug\Entidades.dll
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\Entidades\obj\Debug\Entidades.dll
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\Entidades\obj\Debug\Entidades.pdb
+H:\UTN\Practica\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+H:\UTN\Practica\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+H:\UTN\Practica\Entidades\obj\Debug\Entidades.dll
+H:\UTN\Practica\Entidades\obj\Debug\Entidades.pdb
+H:\UTN\Practica\Entidades\bin\Debug\Entidades.dll
+H:\UTN\Practica\Entidades\bin\Debug\Entidades.pdb

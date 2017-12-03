@@ -1,0 +1,38 @@
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.exe.config
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.exe
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.pdb
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\bin\Debug\Entidades.dll
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\bin\Debug\Entidades.pdb
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csprojResolveAssemblyReference.cache
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.FRMProducto.resources
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.Form2.resources
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.Properties.Resources.resources
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csproj.GenerateResource.Cache
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csproj.CoreCompileInputs.cache
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.exe
+C:\Users\Tomas Angelo\Desktop\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.pdb
+F:\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.exe.config
+F:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.exe
+F:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.pdb
+F:\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.exe
+F:\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.pdb
+F:\UTN\Practica\FRMProducto\bin\Debug\Entidades.dll
+F:\UTN\Practica\FRMProducto\bin\Debug\Entidades.pdb
+F:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csprojResolveAssemblyReference.cache
+F:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.FRMProducto.resources
+F:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.Form2.resources
+F:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.Properties.Resources.resources
+F:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csproj.GenerateResource.Cache
+H:\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.exe.config
+H:\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.exe
+H:\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.pdb
+H:\UTN\Practica\FRMProducto\bin\Debug\Entidades.dll
+H:\UTN\Practica\FRMProducto\bin\Debug\Entidades.pdb
+H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csprojResolveAssemblyReference.cache
+H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.FRMProducto.resources
+H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.Form2.resources
+H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.Properties.Resources.resources
+H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csproj.GenerateResource.Cache
+H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csproj.CoreCompileInputs.cache
+H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.exe
+H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.pdb
