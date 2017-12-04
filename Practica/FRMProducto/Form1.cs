@@ -40,7 +40,7 @@ namespace FRMProducto
 
         private void button2_Click(object sender, EventArgs e)
         {
-            producto.imprimir.Invoke(producto, EventArgs.Empty);
+            Local.Guardar(producto, EventArgs.Empty);
         }
 
         private void FRMProducto_Load(object sender, EventArgs e)
@@ -52,14 +52,25 @@ namespace FRMProducto
         {
             try
             {
-                 producto.xml(producto, EventArgs.Empty);
+                Local.Serializar(producto, EventArgs.Empty);
             }
             catch(Exception)
             {
-                this.label1.Text = "Se cago el XML";
-            }
+                
+            }             
+        }
 
-             
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Local productoCodificado = new Local();
+            try
+            {             
+                this.listBox1.Items.Add(Local.Deserealizar(productoCodificado,EventArgs.Empty).ToString());
+            }
+            catch(Exception)
+            {
+
+            }
         }
     }
 }

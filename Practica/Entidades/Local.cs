@@ -15,8 +15,8 @@ namespace Entidades
         string nombreProducto;
         int precio;
         TipoProducto producto;
-        public Lista imprimir = new Lista(Guardar);
-        public Lista xml = new Lista(Serializar);
+        //public Lista imprimir = new Lista(Guardar);
+        //public Lista xml = new Lista(Serializar);
 
         public enum TipoProducto
         {
@@ -70,6 +70,21 @@ namespace Entidades
             {
 
             }           
+        }
+        public static Local Deserealizar(object obj, EventArgs args)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Local));
+                StreamReader sr = new StreamReader("Serializacion.xml");              
+                sr.Close();
+                return (Local)serializer.Deserialize(sr);
+                
+            }
+            catch(Exception e)
+            {
+                return (Local)obj;
+            }
         }
         public delegate void Lista(object obj, EventArgs args);
     }
