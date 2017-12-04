@@ -13,11 +13,11 @@ namespace FRMProducto
 {
     public partial class FRMProducto : Form
     {
-        private Local producto;
-        private int id;
-        private string nombreProducto;
-        private int precio;
-        private Local.TipoProducto tipoProducto;       
+        public Local producto;
+        public int id;
+        public string nombreProducto;
+        public int precio;
+        public Local.TipoProducto tipoProducto;       
 
         public FRMProducto()
         {
@@ -62,14 +62,18 @@ namespace FRMProducto
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Local productoCodificado = new Local();
             try
-            {             
-                this.listBox1.Items.Add(Local.Deserealizar(productoCodificado,EventArgs.Empty).ToString());
+            {
+                Local l1 = Local.Deserealizar(producto, EventArgs.Empty);
+                if(l1!=null)
+                {
+                   this.listBox1.Items.Add(l1.ToString());
+                }
+                
             }
             catch(Exception)
             {
-
+                
             }
         }
     }

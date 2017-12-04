@@ -77,13 +77,13 @@ namespace Entidades
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(Local));
                 StreamReader sr = new StreamReader("Serializacion.xml");              
-                sr.Close();
-                return (Local)serializer.Deserialize(sr);
                 
+                return (Local)serializer.Deserialize(sr);
+                sr.Close();
             }
             catch(Exception e)
             {
-                return (Local)obj;
+                return null;
             }
         }
         public delegate void Lista(object obj, EventArgs args);

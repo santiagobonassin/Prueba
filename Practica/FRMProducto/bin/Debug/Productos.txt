@@ -1,6 +1,6 @@
 Productos en el carro: 
-ID del producto: 2
-Nombre del producto: tt
+ID del producto: 3
+Nombre del producto: gth
 Tipo de producto: Procesador
-Precio: 34
+Precio: 356
 
