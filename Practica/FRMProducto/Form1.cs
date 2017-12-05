@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
+using System.Threading;
 
 namespace FRMProducto
 {
@@ -17,7 +18,8 @@ namespace FRMProducto
         public int id;
         public string nombreProducto;
         public int precio;
-        public Local.TipoProducto tipoProducto;       
+        public Local.TipoProducto tipoProducto;
+        public XML codificacion = new XML(Deserealizacion);
 
         public FRMProducto()
         {
@@ -62,19 +64,27 @@ namespace FRMProducto
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Thread t1 = new Thread(() => codificacion(this,EventArgs.Empty));
+            t1.Start();
+        }
+
+        private static void Deserealizacion(object obj, EventArgs args)
+        {
             try
             {
-                Local l1 = Local.Deserealizar(producto, EventArgs.Empty);
-                if(l1!=null)
+                Local l1 = Local.Deserealizar();
+                if (l1 != null)
                 {
-                   this.listBox1.Items.Add(l1.ToString());
+                    ((ListBox)obj).Items.Add(l1.ToString());
                 }
-                
+
             }
-            catch(Exception)
+            catch (Exception)
             {
-                
+
             }
         }
+
+        public delegate void XML(object obj, EventArgs args);
     }
 }

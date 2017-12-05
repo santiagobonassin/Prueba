@@ -9,3 +9,4 @@ H:\UTN\Practica\Entidades\obj\Debug\Entidades.dll
 H:\UTN\Practica\Entidades\obj\Debug\Entidades.pdb
 H:\UTN\Practica\Entidades\bin\Debug\Entidades.dll
 H:\UTN\Practica\Entidades\bin\Debug\Entidades.pdb
+H:\UTN\Practica\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache

@@ -11,10 +11,10 @@ namespace Entidades
 {
     public class Local
     {
-        int idProducto;
-        string nombreProducto;
-        int precio;
-        TipoProducto producto;
+        public int idProducto;
+        public string nombreProducto;
+        public int precio;
+        public TipoProducto producto;
         //public Lista imprimir = new Lista(Guardar);
         //public Lista xml = new Lista(Serializar);
 
@@ -71,7 +71,7 @@ namespace Entidades
 
             }           
         }
-        public static Local Deserealizar(object obj, EventArgs args)
+        public static Local Deserealizar()
         {
             try
             {

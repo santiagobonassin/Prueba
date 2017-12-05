@@ -1,6 +1,6 @@
 Productos en el carro: 
-ID del producto: 3
-Nombre del producto: gth
-Tipo de producto: Procesador
-Precio: 356
+ID del producto: 2
+Nombre del producto: RX 460
+Tipo de producto: PlacaDeVideo
+Precio: 4000
 
