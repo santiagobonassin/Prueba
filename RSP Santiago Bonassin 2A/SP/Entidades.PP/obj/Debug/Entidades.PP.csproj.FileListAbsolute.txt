@@ -1,0 +1,9 @@
+D:\RSP Santiago Bonassin 2A\SP\Entidades.PP\obj\Debug\Entidades.PP.csprojResolveAssemblyReference.cache
+H:\RSP Santiago Bonassin 2A\SP\Entidades.PP\obj\Debug\Entidades.PP.csprojResolveAssemblyReference.cache
+H:\RSP Santiago Bonassin 2A\SP\Entidades.PP\obj\Debug\Entidades.PP.csproj.CoreCompileInputs.cache
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\Entidades.PP\bin\Debug\Entidades.PP.dll
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\Entidades.PP\bin\Debug\Entidades.PP.pdb
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\Entidades.PP\obj\Debug\Entidades.PP.csprojResolveAssemblyReference.cache
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\Entidades.PP\obj\Debug\Entidades.PP.csproj.CoreCompileInputs.cache
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\Entidades.PP\obj\Debug\Entidades.PP.dll
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\Entidades.PP\obj\Debug\Entidades.PP.pdb

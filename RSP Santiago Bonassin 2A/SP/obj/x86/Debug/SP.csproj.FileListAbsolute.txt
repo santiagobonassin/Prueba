@@ -1,0 +1,49 @@
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\obj\x86\Debug\SP.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\obj\x86\Debug\SP.Properties.Resources.resources
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\obj\x86\Debug\SP.csproj.GenerateResource.Cache
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\bin\Debug\SP.exe
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\bin\Debug\SP.pdb
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\bin\Debug\Entidades.SP.dll
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\bin\Debug\Entidades.SP.pdb
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\obj\x86\Debug\SP.frmRSP.resources
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\obj\x86\Debug\SP.exe
+C:\Users\Administrador\Documents\Visual Studio 2010\Projects\2017_12_finales\SP\obj\x86\Debug\SP.pdb
+C:\Users\alumno\Desktop\2017_12_finales\SP\bin\Debug\SP.exe
+C:\Users\alumno\Desktop\2017_12_finales\SP\bin\Debug\SP.pdb
+C:\Users\alumno\Desktop\2017_12_finales\SP\bin\Debug\Entidades.SP.dll
+C:\Users\alumno\Desktop\2017_12_finales\SP\bin\Debug\Entidades.SP.pdb
+C:\Users\alumno\Desktop\2017_12_finales\SP\obj\x86\Debug\SP.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\2017_12_finales\SP\obj\x86\Debug\SP.frmRSP.resources
+C:\Users\alumno\Desktop\2017_12_finales\SP\obj\x86\Debug\SP.Properties.Resources.resources
+C:\Users\alumno\Desktop\2017_12_finales\SP\obj\x86\Debug\SP.csproj.GenerateResource.Cache
+C:\Users\alumno\Desktop\2017_12_finales\SP\obj\x86\Debug\SP.exe
+C:\Users\alumno\Desktop\2017_12_finales\SP\obj\x86\Debug\SP.pdb
+C:\Users\alumno\Desktop\SP\obj\x86\Debug\SP.exe
+C:\Users\alumno\Desktop\SP\obj\x86\Debug\SP.pdb
+C:\Users\alumno\Desktop\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.exe
+C:\Users\alumno\Desktop\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.pdb
+D:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.exe
+D:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.pdb
+D:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.csprojResolveAssemblyReference.cache
+D:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.frmRSP.resources
+D:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.Properties.Resources.resources
+D:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.csproj.GenerateResource.Cache
+H:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.csprojResolveAssemblyReference.cache
+H:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.frmRSP.resources
+H:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.Properties.Resources.resources
+H:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.csproj.GenerateResource.Cache
+H:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.csproj.CoreCompileInputs.cache
+H:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.exe
+H:\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.pdb
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.csprojResolveAssemblyReference.cache
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.frmRSP.resources
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.Properties.Resources.resources
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.csproj.GenerateResource.Cache
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.csproj.CoreCompileInputs.cache
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.exe
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\obj\x86\Debug\SP.pdb
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\bin\Debug\SP.exe.config
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\bin\Debug\SP.exe
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\bin\Debug\SP.pdb
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\bin\Debug\Entidades.PP.dll
+C:\Users\Tomas Angelo\Desktop\RSP Santiago Bonassin 2A\SP\bin\Debug\Entidades.PP.pdb
