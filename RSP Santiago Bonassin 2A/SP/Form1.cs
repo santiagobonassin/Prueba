@@ -186,8 +186,10 @@ namespace SP
         {
             EntidadesFinancieras<BancoMunicipal> ef = new EntidadesFinancieras<BancoMunicipal>(2);
             EntidadesFinancieras<Banco> ef1 = new EntidadesFinancieras<Banco>(2);
-
+            ef.ElementosParesEvent += new ElementoPar(ManejadorPares);
+            ef1.ElementosParesEvent += new ElementoPar(ManejadorPares);
             //Asociar manejador de eventos
+
 
             ef.Add(this._bm);
             ef.Add(new BancoMunicipal(this._bp, "Quilmes"));

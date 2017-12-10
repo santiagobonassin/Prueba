@@ -9,7 +9,7 @@ namespace Entidades.PP
     public class BancoNacional:Banco
     {
         public string pais;
-
+      
         public BancoNacional(string nombre, string pais):base(nombre)
         {
             this.pais = pais;

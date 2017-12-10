@@ -9,7 +9,7 @@ namespace Entidades.PP
     public class BancoMunicipal:BancoProvincial
     {
         public string municipio;
-
+       
         public BancoMunicipal(BancoProvincial bm, string municipio):base(bm,bm.provincia)
         {
             this.municipio = municipio;
