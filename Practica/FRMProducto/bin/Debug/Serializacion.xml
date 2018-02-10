@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Local xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <idProducto>2</idProducto>
-  <nombreProducto>RX 460</nombreProducto>
-  <precio>4000</precio>
-  <producto>PlacaDeVideo</producto>
+  <idProducto>1</idProducto>
+  <nombreProducto>g</nombreProducto>
+  <precio>2</precio>
+  <producto>Gabinete</producto>
 </Local>

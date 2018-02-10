@@ -19,11 +19,12 @@ namespace FRMProducto
         public string nombreProducto;
         public int precio;
         public Local.TipoProducto tipoProducto;
-        public XML codificacion = new XML(Deserealizacion);
-
+        public XML codificacion;
+        
         public FRMProducto()
         {
             InitializeComponent();
+            this.codificacion += Deserealizacion;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,18 +65,19 @@ namespace FRMProducto
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Thread t1 = new Thread(() => codificacion(this,EventArgs.Empty));
-            t1.Start();
+            this.codificacion();
         }
 
-        private static void Deserealizacion(object obj, EventArgs args)
+        private void Deserealizacion()
         {
             try
             {
                 Local l1 = Local.Deserealizar();
                 if (l1 != null)
                 {
-                    ((ListBox)obj).Items.Add(l1.ToString());
+ 
+                    this.listBox1.Items.Add(l1.ToString());
+                    
                 }
 
             }
@@ -85,6 +87,6 @@ namespace FRMProducto
             }
         }
 
-        public delegate void XML(object obj, EventArgs args);
+        public delegate void XML();
     }
 }

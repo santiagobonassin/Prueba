@@ -36,3 +36,19 @@ H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csproj.GenerateResource.Cache
 H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.csproj.CoreCompileInputs.cache
 H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.exe
 H:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.pdb
+E:\UTN\Practica\FRMProducto\bin\Debug\FRMProducto.exe.config
+E:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.exe
+E:\UTN\Practica\FRMProducto\obj\Debug\FRMProducto.pdb
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\bin\Debug\FRMProducto.exe.config
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\bin\Debug\FRMProducto.exe
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\bin\Debug\FRMProducto.pdb
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\bin\Debug\Entidades.dll
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\bin\Debug\Entidades.pdb
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\obj\Debug\FRMProducto.csprojResolveAssemblyReference.cache
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\obj\Debug\FRMProducto.FRMProducto.resources
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\obj\Debug\FRMProducto.Form2.resources
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\obj\Debug\FRMProducto.Properties.Resources.resources
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\obj\Debug\FRMProducto.csproj.GenerateResource.Cache
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\obj\Debug\FRMProducto.csproj.CoreCompileInputs.cache
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\obj\Debug\FRMProducto.exe
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\FRMProducto\obj\Debug\FRMProducto.pdb

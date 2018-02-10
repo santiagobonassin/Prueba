@@ -1,6 +1,6 @@
 Productos en el carro: 
-ID del producto: 2
-Nombre del producto: RX 460
-Tipo de producto: PlacaDeVideo
-Precio: 4000
+ID del producto: 1
+Nombre del producto: g
+Tipo de producto: Gabinete
+Precio: 2
 

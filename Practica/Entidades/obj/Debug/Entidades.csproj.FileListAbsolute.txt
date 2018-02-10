@@ -10,3 +10,9 @@ H:\UTN\Practica\Entidades\obj\Debug\Entidades.pdb
 H:\UTN\Practica\Entidades\bin\Debug\Entidades.dll
 H:\UTN\Practica\Entidades\bin\Debug\Entidades.pdb
 H:\UTN\Practica\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\Entidades\bin\Debug\Entidades.dll
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\Entidades\bin\Debug\Entidades.pdb
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\Entidades\obj\Debug\Entidades.dll
+F:\UTN\Laboratorio II - Programacion II\Modelos de Parciales\Practica\Entidades\obj\Debug\Entidades.pdb
