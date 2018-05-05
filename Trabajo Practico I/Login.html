@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 - Formulario Login</title>
+    <script src="javascript/funciones.js"></script>
+</head>
+<body>
+   <h2>Login</h2>
+   <form action="./verificarUsuario.php" method="POST">
+       <table align="center">
+            <tr>
+                <td>
+                    <h4>Ingreso de Credenciales</h4>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td>DNI:</td>
+                <td>
+                    <input type="number" id="txtDNI" name="txtDNI" min="1000000">
+                </td>
+                <td>
+                    <span style="display:none" id="spanDNI">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Apellido:</td>
+                <td>
+                    <input type="text" id="txtApellido" name="txtApellido">
+                </td>
+                <td>
+                    <span style="display:none" id="spanApellido">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2"><input type="reset" value="Limpiar"></td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2"><button type="submit" name="btnEnviar" id="btnEnviar" onclick="return AdministrarValidacionesLogin()">Enviar</button></td>
+            </tr>
+        </table> 
+   </form>  
+</body>
+</html>
