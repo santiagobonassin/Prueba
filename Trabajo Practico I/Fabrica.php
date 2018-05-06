@@ -87,6 +87,7 @@ class Fabrica implements IArchivo
             if(trim($empleados[0])!="")
             {
                 $emp=new Empleado($empleados[0],$empleados[1],$empleados[2],$empleados[3],$empleados[4],$empleados[5],$empleados[6]);
+                $emp->SetPathFoto($empleados[7]);
                 $this->AgregarEmpleado($emp);
             }
         }
