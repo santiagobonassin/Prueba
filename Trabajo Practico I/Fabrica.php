@@ -4,7 +4,7 @@ require_once "interfaces.php";
 class Fabrica implements IArchivo
 {
     private $_cantidadMaxima;
-    private $_empleados;
+    private $_empleados=array();
     private $_razonSocial;
 
     public function __construct($razonSocial)
@@ -91,6 +91,10 @@ class Fabrica implements IArchivo
             }
         }
         fclose($archivo);
+    }
+    public function GetEmpleados()
+    {
+        return $this->_empleados;
     }
 }
 ?>

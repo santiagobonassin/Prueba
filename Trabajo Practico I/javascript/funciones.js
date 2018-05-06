@@ -83,7 +83,7 @@ function AdministrarValidaciones() {
     else {
         AdministrarSpanError("spanSueldo", true);
     }
-    if (ValidarCamposVacios("selectFoto") == false) {
+    if (ValidarCamposVacios("foto") == false) {
         AdministrarSpanError("spanFoto", false);
     }
     else {

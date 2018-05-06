@@ -34,6 +34,7 @@ while(!feof($archivo))
     if(trim($empleados[0])!="")
     {
         $emp=new Empleado($empleados[0],$empleados[1],$empleados[2],$empleados[3],$empleados[4],$empleados[5],$empleados[6]);
+        $emp->SetPathFoto($empleados[7]);
         array_push($listado,$emp);
     }
 }
@@ -43,7 +44,11 @@ foreach($listado as $empleado)
     ?>
     <tr>
         <td>
-            <?php echo $empleado->ToString() ?>
+            <?php echo $empleado->ToString()?>
+        </td>
+        <td>
+            <img src="<?php echo $empleado->GetPathFoto() ?>"           
+            style="width:90px;height:90px;"/>
         </td>
         <td>
             <a href="eliminar.php/?legajo=<?php echo $emp->GetLegajo()?>">Eliminar</a>

@@ -16,6 +16,7 @@ while(!feof($archivo))
         if($listado!=null && $listado[4]==$legajo)
         {
             $emp=new Empleado($listado[0],$listado[1],$listado[2],$listado[3],$listado[4],$listado[5],$listado[6]);
+            $emp->SetPathFoto($listado[7]);
             $fabrica=new Fabrica("Sancor");
             $fabrica->TraerDeArchivo("archivos/empleados.txt");
             if($fabrica->EliminarEmpleado($emp)==true)
