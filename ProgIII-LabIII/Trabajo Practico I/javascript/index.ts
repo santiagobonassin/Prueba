@@ -114,7 +114,7 @@ function AdministrarValidaciones()
     {
         AdministrarSpanError("spanSueldo",true); 
     }
-    if(ValidarCamposVacios("selectFoto")==false)    
+    if(ValidarCamposVacios("foto")==false)    
     {
         AdministrarSpanError("spanFoto",false);
     }
@@ -237,4 +237,9 @@ function VerificarValidacionesIndex():boolean
         return false;
     }
     return true;
+}
+function AdministrarModificar(Valor:string):void
+{
+    (<HTMLInputElement>document.getElementById("modificar")).value=Valor;
+    (<HTMLFormElement>document.getElementById("modificar")).submit();
 }

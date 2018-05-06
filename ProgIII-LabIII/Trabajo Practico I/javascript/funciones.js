@@ -83,7 +83,7 @@ function AdministrarValidaciones() {
     else {
         AdministrarSpanError("spanSueldo", true);
     }
-    if (ValidarCamposVacios("selectFoto") == false) {
+    if (ValidarCamposVacios("foto") == false) {
         AdministrarSpanError("spanFoto", false);
     }
     else {
@@ -176,4 +176,8 @@ function VerificarValidacionesIndex() {
         return false;
     }
     return true;
+}
+function AdministrarModificar(Valor) {
+    document.getElementById("modificar").value = Valor;
+    document.getElementById("modificar").submit();
 }
