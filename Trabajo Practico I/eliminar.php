@@ -22,6 +22,7 @@ while(!feof($archivo))
             if($fabrica->EliminarEmpleado($emp)==true)
             {
                 $fabrica->GuardarEnArchivo("archivos/empleados.txt");
+                unlink($emp->GetPathFoto());
                 echo "El empleado ha sido eliminado";
                 $flag=1;
                 break;

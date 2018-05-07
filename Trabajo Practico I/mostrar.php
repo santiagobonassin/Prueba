@@ -1,6 +1,8 @@
 <?php
 session_start();
 include "validarSesion.php";
+include_once "Empleado.php";
+include_once "Fabrica.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +10,7 @@ include "validarSesion.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="javascript/funciones.js"></script>
     <title>HTML5 - Listado de Empleados</title>
 </head>
 <body>
@@ -23,18 +26,14 @@ include "validarSesion.php";
         </tr>
 
 <?php
-include_once "Empleado.php";
-$archivo=fopen("archivos/empleados.txt","r");
-$empleados="";
-$listado=array();
-while(!feof($archivo))
+
+$fab=new Fabrica("Sancor");
+$fab->TraerDeArchivo("archivos/empleados.txt");
+$empleados=array();
+$empleados=$fab->GetEmpleados();
+foreach($empleados as $emp)
 {
-    $empleados=fgets($archivo);
-    $empleados=explode("-",$empleados);
-    if(trim($empleados[0])!="")
-    {
-        $emp=new Empleado($empleados[0],$empleados[1],$empleados[2],$empleados[3],$empleados[4],$empleados[5],$empleados[6]);
-        $emp->SetPathFoto($empleados[7]);?>
+    ?>
         <tr>
         <td>
             <?php echo $emp->ToString()?>
@@ -46,11 +45,18 @@ while(!feof($archivo))
         <td>
             <a href="eliminar.php/?legajo=<?php echo $emp->GetLegajo()?>">Eliminar</a>
         </td>
-    </tr>
+        <td>
+            <input type="button" value="Modificar" onclick="AdministrarModificar(<?php echo $emp->GetDni(); ?>)">
+        </td>
+        <td>
+            <form action="./index.php" method="POST" id="formulario">
+                <input type="hidden" id="modificar" name="modificar">
+            </form>
+        </td>
+        </tr>
 <?php
-    }
+
 }
-fclose($archivo);
 ?>       
 <tr>
     <td colspan="2"><hr></td>

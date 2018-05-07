@@ -177,3 +177,8 @@ function VerificarValidacionesIndex() {
     }
     return true;
 }
+function AdministrarModificar(dni) {
+    alert("llego al admin");
+    document.getElementById('modificar').setAttribute('value', dni.toString());
+    document.getElementById('formulario').submit();
+}

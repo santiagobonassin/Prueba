@@ -238,3 +238,9 @@ function VerificarValidacionesIndex():boolean
     }
     return true;
 }
+function AdministrarModificar(dni:number):void
+{
+    alert("llego al admin");
+    (<HTMLInputElement>document.getElementById('modificar')).setAttribute('value', dni.toString());
+    (<HTMLFormElement>document.getElementById('formulario')).submit();
+}
