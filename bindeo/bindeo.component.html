@@ -1,0 +1,30 @@
+<div class="container">
+    <img [src]="srcGatito" alt="Gatito" srcset="">
+    El gatito se llama {{nombre}}
+
+    <br><br>
+    <!-- value={{nombre}} -->
+    <!-- [value]="nombre" -->
+    <input 
+    [(ngModel)]="nombre"
+    type="text" 
+    name="gato" 
+    id="gato">
+
+    <input 
+    (click)="enviar($event)"
+    type="button" 
+    value="Enviar">
+
+    <div *ngIf="nombre == 'Juan'">
+        <br >
+        el gato se llama juan
+    </div>
+
+    <div *ngFor="let mascota of lista; index as i" class="mascota">
+        <app-mascota 
+        (turno)="sacarTurno($event)"
+        [mascota]="mascota"
+        ></app-mascota>
+    </div>
+</div>

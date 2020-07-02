@@ -1,0 +1,15 @@
+.container {
+    margin: 12px;
+}
+
+img {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+.mascota {
+    border: 1px solid blue;
+    margin: 2px;
+    width: auto;
+}
